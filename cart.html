@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>DecorWise - Cart</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header12">
+            <div class="container">
+                <div id="branding">
+                    <h1>DecorWise</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="cart.html">
+                            <li class="current">Cart - <span class="cartcount">0</span></li>
+                        </a>
+                        <a href="about.html">
+                            <li>Why us?</li>
+                        </a>
+                        <a href="contactus.html">
+                            <li>Contact Us</li>
+                        </a>
+                        <a href="account.php">
+                            <li>Account</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <button class="button_1 clearCart" onclick="clearCart()">Clear Cart</button>
+        <br><br>
+        <div class="product-container">
+
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="price">PRICE</h5>
+                <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <br><br><br>
+            Cart is empty!
+        </div>
+
+
+        <footer id="footer12">
+            Copyright © 2024. All Rights Reserved By DecorWise
+            <a href="#">
+                <div id="backTop">
+                    <img src="Images/back-to-top.png" alt="Top" height="20px" width="20px">
+                </div>
+            </a>
+        </footer>
+    </div>
+    <script src="cartjs.js"></script>
+</body>
+
+</html>

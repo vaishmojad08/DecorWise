@@ -1,0 +1,53 @@
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  /* Hide the default radio button */
+  .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* custom radio button */
+  .check {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: lightgray;
+    border-radius: 50%;
+  }
+  
+  .container2:hover input ~ .check {
+    background-color: gray;
+  }
+  
+  .container2 input:checked ~ .check {
+    background-color: blue;
+  }
+  
+  .check:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container2 input:checked ~ .check:after {
+    display: block;
+  }
+  
+  .container2 .check:after {
+       top: 8px;
+      left: 8px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: white;
+  }

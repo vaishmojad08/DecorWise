@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="payment.css">
+
+    <script>
+        function validateForm() {
+            var phoneno = /^\d{10}$/;
+            var email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            var x = document.forms["buyForm"]
+            ["mobile"].value;
+            if (!x.match(phoneno)) {
+                alert("Invalid Format for mobile number! Please enter a valid 10 digit mobile number!");
+                return false;
+            }
+            else if (document.forms["buyForm"]["name"].value == '') {
+                alert("Please fill your name.");
+                return false
+            }
+            else if (!document.forms["buyForm"]["email"].value.match(email)) {
+                alert("Please fill correct email.");
+                return false
+            }
+            else if (document.forms["buyForm"]["address"].value == '') {
+                alert("Please fill your address.");
+                return false
+            }
+            else {
+                pop();
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header12">
+        <div class="container">
+            <div id="branding">
+                <h1>DecorWise</h1>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="cart.html">
+                        <li class="current">Cart - <span class="cartcount">0</span></li>
+                    </a>
+                    <a href="about.html">
+                        <li>Why us?</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="account.php">
+                        <li>Account</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <br><br><br>
+    <div id="contactBack">
+        <div id="contactUsHead">
+            <p style="font-size: 25px; margin: 0; font-weight: 600;">Complete your order:</p>
+        </div>
+        <form action="buyphp.php" method="post" id="contactForm" name="buyForm" onsubmit="return validateForm()">
+            <input type="text" name="orderid" class="inp" id="orderid"
+                style="height: 0px; width: 0px; visibility: hidden;"><br><br>
+            <label for="items">Items in order:</label><br><br>
+            <div class="product-container-billing" style="margin-right: 30%"></div>
+            <textarea name="items" id="items-display" class="checkoutDisplayTextArea" cols="30" rows="4" readonly
+                style="background-color: white; visibility: hidden;"></textarea>
+            <textarea name="itemsTag" id="items-display-tag" class="checkoutDisplayTextArea" cols="30" rows="4" readonly
+                style="background-color: white; visibility: hidden;"></textarea>
+            <br><label for="cost">Total Cost:</label><br><br>
+            <textarea name="cost" id="" class="checkoutDisplayTextArea" cols="2" rows="1" readonly
+                style="background: transparent;">Rs. </textarea>
+            <textarea name="cost" id="costDisplay" class="checkoutDisplayTextArea" cols="30" rows="1" readonly
+                style="background: transparent;"></textarea><br><br>
+            <label for="name"> Name:</label><br><br>
+            <input type="text" name="name" class="inp" style="height: 15px; width: 340px;" required><br><br>
+            <label for="email"> Email:</label><br> <br>
+            <input type="email" name="email" class="inp" style="height: 15px; width: 340px;" required><br><br>
+            <label for="mobile"> Mobile:</label><br> <br>
+            <input type="text" name="mobile" class="inp" style="height: 15px; width: 340px;" id="mobile"
+                required><br><br>
+            <!--<label for="startdate">Issue date:</label>
+            <input type="date" name="startdate" id="startdate"><br><br>
+            <label for="startdate">Return date:</label>
+            <input type="date" name="enddate" id="enddate"><br><br>  -->
+            <label for="address">Address:</label><br><br>
+            <textarea name="address" class="inp" cols="30" rows="4"
+                style="font-family: Verdana, Geneva, Tahoma, sans-serif;" required></textarea>
+
+            <br><br>
+            <h1>Payment</h1>
+            <label class="container2" style="padding-bottom: 7px;">Cash on Delivery
+                <input type="radio" name="cars" checked value="1">
+                <span class="check"></span>
+            </label>
+            <label class="container2" style="padding-bottom: 7px;">Credit/Debit Card
+                <input type="radio" name="cars" value="2">
+                <span class="check"></span>
+            </label>
+            <label class="container2" style="padding-bottom: 7px;"> UPI
+                <input type="radio" name="cars" value="3">
+                <span class="check"></span>
+            </label>
+            <br><br>
+            <div id="Cars1" class="desc ">
+                <h2>Payment via Cash on delivery.</h2>
+            </div>
+            <div id="Cars2" class="desc " style="display: none;">
+                <label for="name"> Card number:</label>
+                <input type="text" class="inp" style="height: 15px; width: 240px;"
+                    placeholder="1234-5678-1234-5678"><br><br>
+                <label for="email"> Name of Card Holder:</label>
+                <input type="text" class="inp" style="height: 15px; width: 200px;"><br><br>
+                <label for="mobile"> CVV: </label>
+                <input type="text" class="inp" style="height: 15px; width: 50px;">
+            </div>
+            <div id="Cars3" class="desc " style="display: none;">
+                <label for="name"> Mobile number:</label>
+                <input type="text" class="inp" style="height: 15px; width: 240px;"><br><br>
+                <label for="email"> Password:</label>
+                <input type="password" class="inp" style="height: 15px; width: 200px;"><br><br>
+            </div>
+            <br>
+            <a onclick="validateForm()" class="btn12">Confirm Order</a>
+            <div id="box12" style="background-image: url('Images/giphy.gif');">
+                <span class="ion-checkmark-round"></span>
+                <h1>Your order has been placed!<h1>
+
+                        <input type="submit" value="Proceed" class="close12">
+            </div>
+
+
+        </form>
+        <br>
+    </div>
+
+
+
+    <script type="text/javascript">
+        var c = 0;
+        function pop() {
+            if (c == 0) {
+                document.getElementById("box12").style.display = "block";
+                document.getElementById("contactBack").style.backgroundImage = URL("Images/giphy.gif");
+                c = 1;
+            } else {
+                document.getElementById("box12").style.display = "none";
+                c = 0;
+            }
+        }
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input[name$='cars']").click(function () {
+                var test = $(this).val();
+
+                $("div.desc").hide();
+                $("#Cars" + test).show();
+            });
+        });
+    </script>
+    <br><br><br><br><br><br>
+    <footer id="footer12">
+        Copyright © 2024. All Rights Reserved By DecorWise
+        <a href="#">
+            <div id="backTop">
+                <img src="Images/back-to-top.png" alt="Top" height="20px" width="20px">
+            </div>
+        </a>
+    </footer>
+
+    <script>
+        function onLoadCartNo() {
+            let productNumbers = localStorage.getItem('cartNumbers');
+            if (productNumbers) {
+                document.querySelector('.cartcount').textContent = productNumbers;
+            }
+        }
+
+        function ProductBilling() {
+            let cartItems = localStorage.getItem("productsInCart");
+            cartItems = JSON.parse(cartItems);
+            console.log(cartItems);
+            let productsContainer = document.querySelector(".product-container-billing");
+            if (cartItems && productsContainer) {
+                productsContainer.innerHTML = ``;
+                Object.values(cartItems).map(item => {
+                    console.log(item.name);
+                    productsContainer.innerHTML += `
+            <div class="product-list">
+                <div class="product-image">
+            <img src="./Furniture/${item.tag}.jpg" height=40 width=60>
+            </div>
+            <div class="product-title product-title-products">
+                <span>${item.name}</span>
+            </div>
+            <div class="price">Rs.${item.price}</div>
+            <div class="quantity">${item.incart} Pc
+            
+            </div>
+            <div class="total">Rs.${item.incart * item.price}</div>
+            </div>
+            `
+                })
+            }
+        }
+        ProductBilling();
+        onLoadCartNo();
+        document.getElementById('costDisplay').innerHTML = localStorage.getItem('totalCost');
+        document.getElementById('orderid').innerHTML = localStorage.getItem('orderid');
+        let cartItems = localStorage.getItem("productsInCart");
+        cartItems = JSON.parse(cartItems);
+
+        Object.values(cartItems).map(item => {
+            document.getElementById('items-display').innerHTML += `${item.name}0`;
+
+        })
+        Object.values(cartItems).map(item => {
+            document.getElementById('items-display-tag').innerHTML += `${item.tag}0`;
+
+        })
+    </script>
+    <script src="cartjs.js"></script>
+</body>
+
+</html>

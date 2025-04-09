@@ -1,0 +1,668 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    background-image: url("Images/background_shade.jpg");
+    margin-bottom: 72px;
+    margin-top: 93px;
+}
+    
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+width:10px;
+background:#222;
+}
+
+::-webkit-scrollbar-thumb {
+background:#12597c;
+box-shadow:0 -1000vh 0 100vh red;
+}
+
+.button_1{
+    height: 38px;
+    background-color: #e8491d;
+    border: none;
+    padding: 0px 20px;
+    color: white;
+}
+
+.button_1:hover{
+    background-color: #c23d19;
+}
+
+.button_1:active{
+    background-color: #9c3012;
+    border: none;
+}
+.button_1:focus{
+    border: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    transition: 0.35s;
+}
+
+header{
+    z-index : 1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+    transition: 0.15s;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+
+}
+
+header li{
+    display: inline;
+    padding: 80px 30px;
+    transition: 0.2s;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .current{
+    color: #e8491d;
+    font-weight:bold ;
+}
+
+header li:hover{
+    color: #242424;
+    background-color: #bde9ff;
+}
+
+
+#showcase{
+    min-height:400px;
+    background:url('Images/img2.jpg') no-repeat 0 -400px;
+    text-align:center;
+    color:black;
+}
+
+
+  
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+#showcase p{
+    font-size:20px;
+}
+
+#newsletter{
+    padding:5px 15px;
+    color:#ffffff;
+    background:#35424a
+}
+
+#newsletter h1{
+    float:left;
+}
+
+#newsletter form {
+    float:right;
+    margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+
+footer{
+    z-index : 1;
+    position: fixed;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transition: 0.1s;
+}
+
+
+#backTop{
+    float: right;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #000000;
+}
+
+#backTop:hover{
+    background-color: #584d4a;
+}
+
+#boxes{
+    overflow: auto;
+    margin-top:20px;
+    font-size: 20px;
+}
+  
+#boxes .box{
+    float:left;
+    text-align: left;
+    width:60%;
+    padding:10px;
+}
+
+#boxes img{
+    padding: 10px 15px;
+}
+
+#contactus{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    padding:10px;
+    overflow: auto;
+}
+
+#contactForm{
+    margin-left: 10%;
+}
+
+#contactForm #sub{
+    height: 38px;
+    background: #e8491d;
+    border: none;
+    padding: 0px 20px;
+    color: white;
+}
+
+#contactForm .inp{
+    border: 0px;
+    font-size: 20px;
+    
+    padding: 10px;
+    size: 20px;
+    border-bottom: yellowgreen 2px solid;
+    margin-bottom: 10px;
+}
+
+#contactForm label{
+    font-size: 20px;
+    
+}
+
+#contactUsHead{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+#submitted{
+    padding: 20px 35px;
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+}
+
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
+
+.btn-primary:active{
+    background-color: lightgrey;
+}
+
+/*Shopping page*/
+
+.shop-item {
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.35s;
+    
+
+}
+.submitted-items-item{
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.35s;
+    size: 10px;
+}
+
+.item-on-hover{
+    display: none;
+}
+
+.shop-item:hover .item-on-hover{
+    display: table-row;
+
+}
+
+
+.submitted-items-item:hover .item-on-hover{
+    display: table-row;
+
+}
+
+
+.shop-item:hover .shop-item-price{
+    font-weight: 700;
+}
+
+.shop-item:hover{
+    display: block;
+    margin-bottom: 100px;
+    transform: scale(1.15);
+    padding: 10px;
+    
+    transform-style: preserve-3d;
+    
+}
+
+
+.submitted-items-item:hover{
+    display: block;
+    margin-bottom: 100px;
+    transform: scale(1.10);
+    padding: 10px;
+    transform-style: preserve-3d;
+    
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+    transform-style: preserve-3d;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+.shop-item-image-custom2{
+    height: 150px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Cart page */
+
+.product-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-list{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgrey;
+    margin: 0 auto;
+    padding: 10px;
+    transition: 0.18s;
+}
+
+.product-list:hover{
+    transform: scale(1.12);
+}
+
+.submitted-page-items:hover{
+    transform: scale(1.1);
+}
+
+.product-image{
+    width: 15%;
+}
+
+.product-title-products{
+    margin-top: 12px;
+}
+.product-title{
+    
+    width: 30%;
+}
+
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.product-container img{
+    height: 40px;
+    width: 70px;
+}
+
+.basketTotal{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.clearCart{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.checkoutDisplayTextArea{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    border: none;
+}
+
+.items-display:active{
+    border: none;
+}
+
+textarea {
+    resize: none;
+ }
+
+.account-show{
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#ordersShow{
+    padding-left: 14%;
+}
+
+tr, td{
+    padding: 10px 40px;
+}
+
+.special-row{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.submitted-234{
+    margin-left: 14%;
+}
+
+/*------------------------------------------ */
+
+
+/* Slideshow container */
+.slideshow-container {
+    padding: 0;
+    margin: 0;
+  max-width: 100%;
+  max-height: 200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    padding: 0;
+    margin: 0;
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+
+.mySlides img{
+    bottom: 50px;
+    object-fit: cover;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+header {
+    text-shadow: 0 0 50px rgb(33, 25, 146),0 0 100px rgb(33, 25, 146),0 0 150px rgb(33, 25, 146),0 0 200px rgb(33, 25, 146),0 0 250px rgb(33, 25, 146);
+    animation: animate 5s linear infinite;
+
+}
+
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+.btn12{
+    background: #e74c3c;
+    font-size: 20px;
+    color: rgb(78, 11, 11);
+    padding: 10px 30px;
+    cursor: pointer;
+}
+#box12{
+    width: 500px;
+    height: 400px;
+
+    overflow: hidden;
+    background: #f1f1f1;
+    box-shadow: 0 0 20px black;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+#box12 span{
+    color: #2ecc71;
+    font-size: 40px;
+    display: block;
+    margin: 20px 0;
+}
+#box12 h1{
+    color: #333;
+}
+.close12{
+    font-size: 18px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #3498db;
+    display: inline-block;
+    border-radius: 4px;
+}

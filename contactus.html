@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>DecorWise - Contact</title>
+
+</head>
+
+<body>
+    <header id="header12" style="z-index : 1;">
+        <div class="container">
+            <div id="branding">
+                <h1>DecorWise</h1>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="cart.html">
+                        <li>Cart - <span class="cartcount">0</span></li>
+                    </a>
+                    <a href="about.html">
+                        <li>Why us?</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li class="current">Contact Us</li>
+                    </a>
+                    <a href="account.php">
+                        <li>Account</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="contactinfo">
+                <div>
+                    <h2> Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="Images/location.png" height="30" width="30"></span>
+                            <span>23 Bandra Road<br>
+                                Mumbai, Maharastra<br>
+                                401020</span>
+                        </li>
+                        <li>
+                            <a href="mailto:decorwise@gmail.com" style="text-decoration: none; color: white;
+                            font-size: large;">
+                                <span><img src="Images/mail.png" height="30" width="30"></span>
+                                <span>decorwise@gmail.com</span></a>
+                        </li>
+                        <li>
+                            <span><img src="Images/call.png" height="30" width="30"></span>
+                            <span>8767123499</span>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="Images/fblogo.png" height="30" width="40"></a></li>
+                    <li><a href="#"><img src="Images/twitter.png" height="30" width="30"></a></li>
+                    <li><a href="#"><img src="Images/insta.png" height="30" width="47"></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Send a Message
+                </h2>
+                <form name="contactForm" action="contact.php" method="post" id="contactForm"
+                    onsubmit="return validateForm()">
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" name="name" required>
+                            <span>Name</span>
+                        </div>
+                        <div class="inputBox w50" style="visibility: hidden;">
+
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" name="email" required>
+                            <span>Email Address</span>
+                        </div>
+
+                        <div class="inputBox w100">
+                            <textarea name="msg" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"
+                                required></textarea>
+                            <span>Write your message here...</span>
+                        </div>
+                        <div class=" inputBox w100">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer12">
+        Copyright © 2024. All Rights Reserved By DecorWise
+        <a href="#">
+            <div id="backTop">
+                <img src="Images/back-to-top.png" alt="Top" height="20px" width="20px">
+            </div>
+        </a>
+    </footer>
+    <script src="cartjs.js"></script>
+</body>
+
+</html>

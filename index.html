@@ -1,0 +1,681 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>DecorWise - Home</title>
+    <script>
+        function validateForm() {
+            var x = document.forms["subscibeF"]
+            ["email"].value;
+            if (x == "" || x == null) {
+                alert("Please fill your Email id.");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <header id="header12" class="main-title-style">
+        <div class="container">
+            <div id="branding">
+                <h1>DecorWise</h1>
+            </div>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li class="current">Home</li>
+                    </a>
+                    <a href="cart.html">
+                        <li>Cart - <span class="cartcount">0</span></li>
+                    </a>
+                    <a href="about.html">
+                        <li>Why us?</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="account.php">
+                        <li>Account</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="Images/img2.jpg" style="width:100%; max-height: 350px;">
+                <div class="text">
+                    <h1 style="font-size: 40px;">A Complete home decor renting platform</h1>
+                    <p>Built for the people on the move.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/img5.jpg" style="width:100%; max-height: 350px;">
+                <div class="text">
+                    <h1 style="font-size: 40px;">A Complete home decor renting platform</h1>
+                    <p>Built for the people on the move.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/img4.jpg" style="width:100%; max-height: 350px;">
+                <div class="text">
+                    <h1 style="font-size: 40px;">A Complete home decor renting platform</h1>
+                    <p>Built for the people on the move.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/img6.jpg" style="width:100%; max-height: 350px;">
+                <div class="text">
+                    <h1 style="font-size: 40px;">A Complete home decor renting platform</h1>
+                    <p>Built for the people on the move.</p>
+                </div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/img7.jpg" style="width:100%; max-height: 350px;">
+                <div class="text">
+                    <h1 style="font-size: 40px;">A Complete home decor renting platform</h1>
+                    <p>Built for the people on the move.</p>
+                </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <script>var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+
+        </script>
+        <!-- The dots/circles 
+        <section id="showcase">
+            <div class="container">
+                <h1>A Complete home decor renting platform</h1>
+                <p>Built for the people on the move.</p>
+            </div>
+        </section>-->
+
+
+
+        <section class="container content-section">
+            <h2 class="section-header">King Size Beds</h2> <!-- HEADING FOR SECTION-->
+            <div class="shop-items">
+                <!-- ONE SECTION-->
+                <div class="shop-item">
+                    <!-- First Item-->
+                    <span class="shop-item-title">Wakefit King </span>
+                    <img class="shop-item-image" src="Furniture/bed.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 45,000</span>
+
+                        <a class="btn btn-primary shop-item-button " href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <ul>
+                            <li>King Size Frame Base Mattress </li>
+                            <li>Well cushioned Drawer Fabric </li>
+                            <li> Dimensions </li>
+                            <li> Depth: 215.9 cm </li>
+                            <li>Width: 187.96 cm Height: 88.9 cm </li>
+                            <li> Engineering Wood </li>
+                            <li>Color: Blue </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <!-- Second Item-->
+                    <span class="shop-item-title"> Simple King </span>
+                    <img class="shop-item-image" src="Furniture/kingbed.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 35,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>Particle Board King Size </li>
+                                <li>Spacious Box Storage </li>
+                                <li> Dimensions Depth: 211.9 cm Width: 186.96 cm Height: 90 cm </li>
+                                <li> Engineering Wood </li>
+                                <li> Color: Brown </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Modern King </span>
+                    <img class="shop-item-image" src="Furniture/king2bed.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 50,000</span>
+                        <a class="btn btn-primary shop-item-button " href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>Box Board King Size </li>
+                                <li> Spacious Slide Storage </li>
+                                <li> Dimensions Depth: 220.9 cm Width: 190.96 cm Height: 92 cm </li>
+                                <li> Maple Wood </li>
+                                <li> Color: Brown </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title"> Classic King </span>
+                    <img class="shop-item-image" src="Furniture/king3bed.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 55,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>Slider Board King Size </li>
+                                <li> Spacious Box Storage </li>
+                                <li> Dimensions Depth: 220.9 cm Width: 190.96 cm Height: 92 cm </li>
+                                <li> Maple Wood </li>
+                                <li> Color: White </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Queen Size Beds</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Sleepyhead Queen </span>
+                    <img class="shop-item-image" src="Furniture/queenbed.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 25,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>Sleepyhead Queen Size </li>
+                                <li> Spacious Box Storage </li>
+                                <li> Dimensions Depth: 200.9 cm Width: 180.96 cm Height: 85 cm </li>
+                                <li> Engineering Wood </li>
+                                <li> Color: Coffe Brown </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Simple Queen </span>
+                    <img class="shop-item-image" src="Furniture/queen2.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 15,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>Single Board Queen Size </li>
+                                <li> Spacious Box Storage </li>
+                                <li> Dimensions Depth: 210.9 cm Width: 175.96 cm Height: 92 cm </li>
+                                <li> Maple Wood </li>
+                                <li> Color: Brown </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Modern Queen </span>
+                    <img class="shop-item-image" src="Furniture/queen3.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 15,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> Cushioned Queen Size </li>
+                                <li> Spacious Slide Storage </li> Dimensions Depth: 220.9 cm Width: 190.96 cm Height: 92
+                                cm </li>
+                                <li> Maple Wood </li>
+                                <li> Color: White </li>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Tables</h2> <!-- Second SECTION-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Pine Wood</span>
+                    <img class="shop-item-image" src="Furniture/pinewood.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 17,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>Rosewood (Sheesham) </li>
+                                <li> Solid Wood </li>
+                                <li> W x H x D: 83.82 cm x 40.64 cm x 45.72 cm </li>
+                                <li> (2 ft 9 in x 1 ft 3 in x 1 ft 6 in) </li>
+                                <li> Pre Assembled (Ready to Use) </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Oak Wood</span>
+                    <img class="shop-item-image" src="Furniture/oakwood.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 20,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>MDF (Medium Density Fiber) </li>
+                                <li> Solid Wood </li>
+                                <li> W x H x D: 120 cm x 45 cm x 60 cm </li>
+                                <li> (3 ft 11 in x 1 ft 5 in x 1 ft 11 in) </li>
+                                <li> Storage not included </li>
+                                <li> Pre Assembled (Ready to Use) </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Ply Wood</span>
+                    <img class="shop-item-image" src="Furniture/plywood.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 20,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>MDF (Medium Density Fiber) </li>
+                                <li> Engineering Wood </li>
+                                <li> W x H x D: 120 cm x 45 cm x 60 cm </li>
+                                <li> (3 ft 11 in x 1 ft 5 in x 1 ft 11 in) </li>
+                                <li> Outdoor 2 Seater Table </li>
+                                <li> Pre Assembled (Ready to Use) </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Sofa Set</h2> <!-- Second SECTION-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Single Sofa</span>
+                    <img class="shop-item-image" src="Furniture/singlesofa.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 27,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> Chenille </li>
+                                <li>Filling Material: Foam </li>
+                                <li> Frame Material: Solid Wood </li>
+                                <li> DIY - Basic assembly to be done with </li>
+                                <li> simple tools by the customer, comes with </li>
+                                <li> instructions. </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Sofa set</span>
+                    <img class="shop-item-image" src="Furniture/sofaset.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 40,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Upholestry: Cotton </li>
+                                <li> Filling Material: Foam </li>
+                                <li> Frame Material: Solid Wood </li>
+                                <li> Right Facing </li>
+                                <li> simple tools by the customer, comes with </li>
+                                <li> instructions. </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">L shape Sofa</span>
+                    <img class="shop-item-image" src="Furniture/lshape.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 35,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Upholestry: Velvet </li>
+                                <li> Filling Material: Foam </li>
+                                <li> Frame Material: Solid Wood </li>
+                                <li> Symmetrical </li>
+                                <li> simple tools by the customer, comes with </li>
+                                <li> instructions. </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Sofa cum Bed</span>
+                    <img class="shop-item-image" src="Furniture/sofacumbed.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 20,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Mattress Included: Yes </li>
+                                <li> Filling Material: Foam </li>
+                                <li> Frame Material: Solid Wood </li>
+                                <li> Symmetrical </li>
+                                <li> simple tools by the customer, comes with </li>
+                                <li> instructions. </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Recliner</span>
+                    <img class="shop-item-image" src="Furniture/recliner.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 20,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Material: Leatherette </li>
+                                <li> 3 Reclining Positions </li>
+                                <li> Filling Material: Pollyfill </li>
+                                <li> W x H x D: 84 cm x 102 cm x 95 cm (2 ft 9 in x 3 ft 4 in x 3 ft 1 in) </li>
+                                <li> simple tools by the customer, comes with instructions. </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Dining Table</h2> <!-- Second SECTION-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Small Dining Table</span>
+                    <img class="shop-item-image" src="Furniture/diningtable.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 27,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Table Top Material: Glass </li>
+                                <li> Chair Frame: Metal </li>
+                                <li> Seating Capacity: 4 Seater </li>
+                                <li> Table (W x H x D): 1200 mm x 750 mm x 700 mm <br> (3 ft 11 in x 2 ft 5 in x 2 ft 3
+                                    in) </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Medium Dining Table</span>
+                    <img class="shop-item-image" src="Furniture/mediiumtable.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 40,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Table Top Material: Solid Wood </li>
+                                <li> Chair Frame: Solid Wood </li>
+                                <li> Seating Capacity: 6 Seater </li>
+                                <li> Table (W x H x D): 1200 mm x 750 mm x 700 mm <br> (3 ft 11 in x 2 ft 5 in x 2 ft 3
+                                    in) </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Big Dining Table</span>
+                    <img class="shop-item-image" src="Furniture/bigtable.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 35,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li>
+                                    Table Top Material: Solid Wood </li>
+                                <li> Chair Frame: Solid Wood </li>
+                                <li> Seating Capacity: 12 Seater </li>
+                                <li> Table (W x H x D): 1200 mm x 750 mm x 700 mm <br> (3 ft 11 in x 2 ft 5 in x 2 ft 3
+                                    in) </li>
+                            </ul>
+                            </p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Refrigerator</h2> <!-- Second SECTION-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Small Fridge</span>
+                    <img class="shop-item-image" src="Furniture/smallfridge.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 27,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> 49 L : Good for bachelors </li>
+                                <li>Reciprocatory Compressor </li>
+                                <li> 1 Star </li>
+                                <li> Direct Cool : Economical, consumes less electricity, </li>
+                                <li>Requires manual defrosting </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Medium Fridge</span>
+                    <img class="shop-item-image" src="Furniture/mediumfridge.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 40,000 &nbsp;&nbsp;</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> 260 L : Good for families of 3-5 members </li>
+                                <li>Smart Inverter Compressor </li>
+                                <li> 3 Star : For Energy savings up to 35% </li>
+                                <li> Frost Free : Auto fridge defrost to stop ice-build up </li>
+                                <li> Convertible: Offers you more space for all the <br> Food you need to store </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Large Fridge</span>
+                    <img class="shop-item-image" src="Furniture/largefridge.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 35,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> 563 L : Good for families of 5-8 members </li>
+                                <li>Smart Inverter Compressor </li>
+                                <li> 5 Star : For Energy savings up to 45% </li>
+                                <li>Frost Free : Auto fridge defrost to stop ice-build up </li>
+                                <li>Convertible: Offers you more space for all the<br> food you need to store </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Television</h2> <!-- Second SECTION-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Smart Led TV</span>
+                    <img class="shop-item-image" src="Furniture/smartled.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 27,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> Panasonic 123cm (49 inch) Ultra HD (4K) </li>
+                                <li> LED Smart TV (TH-49GX500DX) </li>
+                                <li> Supported Apps: Netflix|Prime Video|Youtube </li>
+                                <li> Operating System: Linux</li>
+                                <li> Resolution: Ultra HD (4K) 3840 x 2160 Pixels</li>
+                                <li> Sound Output: 20 W </li>
+                                <li> Refresh Rate: 100 Hz </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Smart android 4k TV</span>
+                    <img class="shop-item-image" src="Furniture/4kled.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 40,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> Panasonic 123cm (49 inch) Ultra HD (4K) </li>
+                                <li> LED Android TV (TH-49GX500DX) </li>
+                                <li> Supported Apps: Netflix|Prime Video|Youtube </li>
+                                <li> Operating System: Android (Google Assistant & Chromecast in-built)</li>
+                                <li> Resolution: Ultra HD (4K) 3840 x 2160 Pixels</li>
+                                <li> Sound Output: 20 W </li>
+                                <li> Refresh Rate: 100 Hz </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Smart OLED TV</span>
+                    <img class="shop-item-image" src="Furniture/oledtv.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">Rs 35,000</span>
+                        <a class="btn btn-primary shop-item-button" href="javascript:void(0)"
+                            style="text-decoration:none;">ADD TO CART</a>
+                    </div>
+                    <span class="item-on-hover">
+                        <div style="word-wrap: break-word;">
+                            <ul>
+                                <li> Sony Bravia A8F 163.9cm (65 inch) Ultra HD (4K) </li>
+                                <li> OLED Smart Android TV (KD-65A8F) </li>
+                                <li> Supported Apps: Netflix|Prime Video|Youtube </li>
+                                <li> Operating System: Android (Google Assistant & Chromecast in-built)</li>
+                                <li> Resolution: Ultra HD (4K) 3840 x 2160 Pixels</li>
+                                <li> Sound Output: 20 W </li>
+                                <li> Refresh Rate: 100 Hz </li>
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <script src="vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".shop-item"), {
+                max: 18,
+                speed: 400
+            });
+        </script>
+
+    </div>
+    <footer id="footer12">
+        Copyright © 2024. All Rights Reserved By DecorWise
+        <a href="#">
+            <div id="backTop">
+                <img src="Images/back-to-top.png" alt="Top" height="18px" width="18px">
+            </div>
+        </a>
+    </footer>
+    <script src="cartjs.js"></script>
+</body>
+
+</html>
